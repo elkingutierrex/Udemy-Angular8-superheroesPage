@@ -6,17 +6,16 @@
 </h1>
 
 <div class="card-columns">
-    <div class="card">
-        <img class="card-img-top img-fluid" src="assets/img/aquaman.png" alt="Card imagen">
+    <div class="card" *ngFor="let heroe of heroes">
+        <img class="card-img-top img-fluid" [src]="heroe.img" [alt]="heroe.nombre">
         <div class="card-block">
-            <h4 class="card-title">Cart</h4>
+            <h4 class="card-title">{{ heroe.nombre }}</h4>
             <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi animi doloribus laboriosam nobis et explicabo iste hic deserunt officia voluptate alias pariatur, architecto provident voluptatem! Praesentium neque sapiente reprehenderit porro?
+                {{ heroe.bio }}
             </p>
             <p class="card-text">
-                <small class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis placeat itaque
-          cumque! Odio, totam explicabo! Molestias magni quam porro saepe quo error. Asperiores, sint numquam. Possimus
-          ducimus doloremque a odio.
+                <small class="text-muted">
+          {{ heroe.aparicion }}
         </small>
             </p>
             <button type="button" class="btn btn-outline-primary btn-block">
