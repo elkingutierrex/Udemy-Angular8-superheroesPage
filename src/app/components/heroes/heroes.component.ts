@@ -13,7 +13,11 @@ export class HeroesComponent implements OnInit {
 
   ngOnInit() {
     this.heroes = this._heroesService.getHeroes();
-    console.log(this.heroes)
+    // console.log(this.heroes)
+  }
+
+  verHeroe( idx:number ){
+    console.log(idx)
   }
 
 }
