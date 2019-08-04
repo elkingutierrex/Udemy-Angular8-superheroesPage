@@ -6,6 +6,10 @@ body {
     margin-top: 20px
 }
 
+.img-logo {
+    max-height: 50px;
+}
+
 
 /* Animaciones */
 
